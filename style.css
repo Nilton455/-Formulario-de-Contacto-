@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #fff;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.445);
+    border-radius: 15px;
+  }
+  
+  form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  label {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #555;
+  }
+
+  label i, button i {
+    margin-right: 8px;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #807e7e;
+    border-radius: 5px;
+  }
+  
+  /* Estilo del botón */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    animation: animateButton 2s infinite alternate; /* Animación infinita */
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  /* Animación que cambia el color de fondo del botón */
+  @keyframes animateButton {
+    0% {
+      background-color: #28a745; /* Color inicial */
+      transform: scale(1);
+    }
+    50% {
+      background-color: #000000; /* Color intermedio */
+      transform: scale(1.1); /* Agranda ligeramente el botón */
+    }
+    100% {
+      background-color: #5f5e5c; /* Color final */
+      transform: scale(1); /* Vuelve a su tamaño original */
+    }
+  }
+  
+  button i {
+    vertical-align: middle;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  #responseMessage {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
